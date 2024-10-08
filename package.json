@@ -1,0 +1,56 @@
+{
+    "name": "electron-app",
+    "version": "1.0.1",
+    "description": "My test electron app",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon --exec electron .",
+        "el": "electron .",
+        "dist": "electron-builder",
+        "start": "react-scripts start"
+    },
+    "repository": "https://github.com/Abhi-Radadiya/electron-update",
+    "publish": {
+        "provider": "github",
+        "releaseType": "release"
+    },
+    "build": {
+        "appId": "com.peptidesynthesis.autoupdater",
+        "productName": "Synthesis app",
+        "win": {
+            "target": "nsis"
+        },
+        "directories": {
+            "output": "dist"
+        }
+    },
+    "author": "CoderJeet",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^32.1.2",
+        "electron-builder": "^25.1.7"
+    },
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "electron-updater": "^6.3.9",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
